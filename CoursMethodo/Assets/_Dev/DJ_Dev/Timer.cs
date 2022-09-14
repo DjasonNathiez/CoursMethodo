@@ -6,7 +6,7 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     public TextMeshProUGUI TimeText;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +16,7 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TimeText.text = System.DateTime.Now.ToString();
+        //Display date & hours on screen
+        TimeText.text = System.DateTime.Now.ToString();;
     }
 }
